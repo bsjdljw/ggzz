@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    audio{
+        width: 400px;
+        height: 50px;
+        display: none;
+    }
+    .dj{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div class="dj"></div>
+    <audio src="../mp3/1.mp3"   preload="auto"  class="yy1"></audio>
+    <!-- <audio src="../mp3/2.mp3" loop="loop" autoplay="autoplay" controls="controls" class="yy2"></audio>
+    <audio src="../mp3/3.mp3" loop="loop" autoplay="autoplay" controls="controls" class="yy3"></audio>
+    <audio src="../mp3/4.mp3" loop="loop" autoplay="autoplay" controls="controls" class="yy4" metadata></audio> -->
+</body>
+<script>
+    let yy1 = document.querySelector('.yy1')
+    let yy2 = document.querySelector('.yy2')
+    let yy3 = document.querySelector('.yy3')
+    let yy4 = document.querySelector('.yy4')
+    let dj = document.querySelector('.dj')
+    dj.onclick = function(){
+        yy1.play()
+    }
+
+</script>
+</html>
